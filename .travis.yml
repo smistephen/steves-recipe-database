@@ -3,10 +3,7 @@ language: python
 python:
   - "3.6"
 
-env:
- - DJANGO_VERSION=2.1
-
 install:
- - pip install -q Django==$DJANGO_VERSION --use-mirrors
+ - pip install -q Django==2.1 --use-mirrors
 
 script: python manage.py test recipes
