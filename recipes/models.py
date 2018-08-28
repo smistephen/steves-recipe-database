@@ -3,7 +3,7 @@ from django.db import models
 class Recipe(models.Model):
     title = models.CharField(max_length=50)
     instructions = models.TextField()
-    ingredients = models.ManyToManyField('Ingredient',blank=True)
+    ingredients = models.ManyToManyField('Ingredient', blank=True)
 
     def __str__(self):
         return self.title
@@ -19,7 +19,7 @@ class Recipe(models.Model):
 class Ingredient(models.Model):
     name = models.CharField(max_length=50)
     isMeat = models.BooleanField()
-    recipes = models.ManyToManyField(Recipe,blank=True)
+    recipes = models.ManyToManyField(Recipe, blank=True)
 
     def __str__(self):
         return self.name
