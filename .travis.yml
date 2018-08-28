@@ -4,6 +4,6 @@ python:
   - "3.6"
 
 install:
- - pip install -q Django==2.1 --use-mirrors
+ - pip install -q Django==2.1
 
 script: python manage.py test recipes
