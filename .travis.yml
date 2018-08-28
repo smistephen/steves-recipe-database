@@ -9,4 +9,4 @@ env:
 install:
  - pip install -q Django==$DJANGO_VERSION
 
-script: python manage.py test recipes
+script: python manage.py test --settings=recipedatabase.settings_default recipes
